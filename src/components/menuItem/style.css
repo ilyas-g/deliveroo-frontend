@@ -16,6 +16,10 @@
     transition-duration: .3s;
 }
 
+.MenuItem--card:hover {
+    box-shadow: 0 22px 24px 0 rgb(46 51 51 / 7%);
+}
+
 .MenuItem--texts {
     flex: 1 1;
     margin-right: 15px;
