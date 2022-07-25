@@ -1,0 +1,71 @@
+.MenuItem {
+    width: 50%;
+    min-width: 300px;
+    padding: 0 10px 25px;
+}
+
+.MenuItem--card {
+    border-radius: 5px;
+    height: 160px;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.MenuItem--texts {
+    flex: 1 1;
+    margin-right: 15px;
+}
+
+.MenuItem--picture {
+    height: 130px;
+    width: 130px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.MenuItem--picture img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.MenuItem--texts h3 {
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+}
+
+.MenuItem--texts p {
+    font-size: .9rem;
+    color: #808484;
+    line-height: 1.3rem;
+    height: 2.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 1rem;
+}
+
+.MenuItem--infos {
+    display: flex;
+    align-items: center;
+}
+
+.MenuItem--price {
+    color: #808484;
+    font-size: 1.1rem;
+}
+
+.MenuItem--popular {
+    color: #ff8000;
+    font-size: .8rem;
+    margin-left: 1rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

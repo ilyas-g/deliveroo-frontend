@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import './App.css';
 import axios from "axios";
+// import MenuItem from "./components/menuItem/MenuItem";
+import MenuItems from "./components/menuItems/MenuItems";
+
 
 // https://deliveroo-backend-orion2022.herokuapp.com/
 
@@ -35,17 +38,7 @@ function App() {
         <div>
           {data.categories.map((categorie, index) => {
             return (
-              <div key={index}>
-                <h2>qsdfghgfsdfghgfd {categorie.name} </h2>
-
-                {categorie.meals.map((meal, index) => {
-                  return (
-                    <h3 key={index}>{meal.title}</h3>
-                  );
-
-                })}
-
-              </div>
+              <MenuItems key={index} categorie={categorie} />
             );
           })}
         </div>
