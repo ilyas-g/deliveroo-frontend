@@ -11,7 +11,7 @@ export default function MenuItem({ title, price, picture, description, popular }
                     {price ? <div className="MenuItem--infos">
                         <span className="MenuItem--price">{price}</span>
                     </div> : ''}
-                    {popular === true ? <strong>POPULAR</strong> : ''}
+                    {popular === true ? <span className="MenuItem--popular">Populaire</span> : ''}
                 </div>
                 {picture ? <div className="MenuItem--picture">
                     <img src={picture} alt={title} />
