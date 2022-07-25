@@ -3,16 +3,18 @@ import './style.css';
 
 export default function Header({ title, description, picture }) {
     return (
-        <header class="Header"><div class="TopBar"><div class="TopBar--center">
-        </div>
-        </div>
-            <div class="RestaurantInfos">
-                <div class="RestaurantInfos--center">
-                    <div class="RestaurantInfos--texts">
+        <header className="Header">
+            <div className="TopBar">
+                <div className="TopBar--center">
+                </div>
+            </div>
+            <div className="RestaurantInfos">
+                <div className="RestaurantInfos--center">
+                    <div className="RestaurantInfos--texts">
                         <h1>{title}</h1>
                         <p>{description}</p>
                     </div>
-                    <img class="RestaurantInfos--cover" src={picture} alt="Restaurant Cover" />
+                    <img className="RestaurantInfos--cover" src={picture} alt="Restaurant Cover" />
                 </div>
             </div>
         </header>

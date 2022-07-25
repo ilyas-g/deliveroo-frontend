@@ -7,7 +7,7 @@ export default function MenuItems({ categorie }) {
     return (
         <div className="MenuItems">
             <h2>{categorie.name}</h2>
-            <div class="MenuItems--items">
+            <div className="MenuItems--items">
                 {categorie.meals.map((meal, index) => {
                     return (
                         <>
