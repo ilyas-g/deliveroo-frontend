@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-export default function Header() {
+export default function Header({ title, description, picture }) {
     return (
         <header class="Header"><div class="TopBar"><div class="TopBar--center">
         </div>
@@ -9,10 +9,10 @@ export default function Header() {
             <div class="RestaurantInfos">
                 <div class="RestaurantInfos--center">
                     <div class="RestaurantInfos--texts">
-                        <h1>Le Pain Quotidien - Montorgueil</h1>
-                        <p>Profitez de chaque plaisir de la vie quotidienne. Le Pain Quotidien propose des ingrédients simples et sains, du bon pain, des fruits et des légumes frais et de saison issus de l’agriculture biologique.</p>
+                        <h1>{title}</h1>
+                        <p>{description}</p>
                     </div>
-                    <img class="RestaurantInfos--cover" src="https://f.roocdn.com/images/menus/17697/header-image.jpg" alt="restaurant cover" />
+                    <img class="RestaurantInfos--cover" src={picture} alt="Restaurant Cover" />
                 </div>
             </div>
         </header>

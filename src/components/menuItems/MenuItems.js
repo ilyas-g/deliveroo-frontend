@@ -3,12 +3,11 @@ import './style.css';
 import MenuItem from '../menuItem/MenuItem';
 
 export default function MenuItems({ categorie }) {
-    console.log();
+
     return (
         <div className="MenuItems">
             <h2>{categorie.name}</h2>
             <div class="MenuItems--items">
-
                 {categorie.meals.map((meal, index) => {
                     return (
                         <>

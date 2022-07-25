@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header title={data.restaurant.name} description={data.restaurant.description} picture={data.restaurant.picture} />
       {isLoading === true ? (
         <h1>En cours chargement</h1>
       ) : (
@@ -41,7 +41,7 @@ function App() {
           <div className="Menu">
             {data.categories.map((categorie, index) => {
               return (
-                <MenuItems key={index} categorie={categorie} />
+                categorie.meals.length ? <MenuItems key={index} categorie={categorie} /> : ''
               );
             })}
           </div>
