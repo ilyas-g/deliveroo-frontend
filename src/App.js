@@ -3,6 +3,7 @@ import './App.css';
 import axios from "axios";
 // import MenuItem from "./components/menuItem/MenuItem";
 import MenuItems from "./components/menuItems/MenuItems";
+import Header from "./components/header/Header";
 
 
 // https://deliveroo-backend-orion2022.herokuapp.com/
@@ -32,15 +33,18 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       {isLoading === true ? (
         <h1>En cours chargement</h1>
       ) : (
-        <div>
-          {data.categories.map((categorie, index) => {
-            return (
-              <MenuItems key={index} categorie={categorie} />
-            );
-          })}
+        <div className="Content--center">
+          <div className="Menu">
+            {data.categories.map((categorie, index) => {
+              return (
+                <MenuItems key={index} categorie={categorie} />
+              );
+            })}
+          </div>
         </div>
       )}
     </div>
